@@ -3,9 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevAndreaCarratta.HelloWorld", "DevAndreaCarratta.HelloWorld\DevAndreaCarratta.HelloWorld.csproj", "{A2FF0A04-23BF-4484-AB45-6B0A1763CE5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Project", "Test Project", "{EDE0E8C4-8A56-4401-9F33-11821C31E70E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevAndreaCarratta.HelloWorld.ConsoleApp", "DevAndreaCarratta.HelloWorld.Test\DevAndreaCarratta.HelloWorld.ConsoleApp\DevAndreaCarratta.HelloWorld.ConsoleApp.csproj", "{668563E9-A109-463F-A22C-B197966C6FBD}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2FF0A04-23BF-4484-AB45-6B0A1763CE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2FF0A04-23BF-4484-AB45-6B0A1763CE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2FF0A04-23BF-4484-AB45-6B0A1763CE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2FF0A04-23BF-4484-AB45-6B0A1763CE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668563E9-A109-463F-A22C-B197966C6FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668563E9-A109-463F-A22C-B197966C6FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668563E9-A109-463F-A22C-B197966C6FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668563E9-A109-463F-A22C-B197966C6FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{668563E9-A109-463F-A22C-B197966C6FBD} = {EDE0E8C4-8A56-4401-9F33-11821C31E70E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {067FF9B1-3623-4C2F-9962-0E9D56DE0AA1}
