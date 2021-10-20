@@ -16,7 +16,7 @@
 
         internal string SayToFriend(string friend)
         {
-            return $"{HELLO_WORLD_SENTENCE} {friend} {EXCLAMATION_POINT}";
+            return $"{HELLO_WORLD_SENTENCE} {friend}{EXCLAMATION_POINT}";
         }
     }
 }

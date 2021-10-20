@@ -2,11 +2,11 @@
 {
     public class SayHelloWorld
     {
-        private readonly SayHelloWorld _logic;
+        private readonly SayHelloWorldLogic _logic;
 
         public SayHelloWorld()
         {
-            _logic = new SayHelloWorld();
+            _logic = new SayHelloWorldLogic();
         }
 
         public string SayToAnonymous()
