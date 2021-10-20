@@ -21,11 +21,13 @@ jobs:
     displayName: dotnet build
     inputs:
       projects: '**/*.sln'
+      arguments: --configuration $(BuildConfiguration) /p:Version=$(Build.BuildNumber)
   - task: DotNetCoreCLI@2
     displayName: dotnet pack
     inputs:
       command: pack
       searchPatternPack: '**/*.sln'
+      versioningScheme: byBuildNumber
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop'
 ...
