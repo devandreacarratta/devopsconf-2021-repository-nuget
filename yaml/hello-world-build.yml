@@ -1,0 +1,33 @@
+name: $(Year:yyyy).$(DayOfYear).$(Hours).$(BuildID)
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: master
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    vmImage: vs2017-win2016
+  steps:
+  - checkout: self
+    clean: true
+  - task: DotNetCoreCLI@2
+    displayName: dotnet restore
+    inputs:
+      command: restore
+      projects: '**/*.sln'
+  - task: DotNetCoreCLI@2
+    displayName: dotnet build
+    inputs:
+      projects: '**/*.sln'
+      arguments: --configuration $(BuildConfiguration) /p:Version=$(Build.BuildNumber)
+  - task: DotNetCoreCLI@2
+    displayName: dotnet pack
+    inputs:
+      command: pack
+      searchPatternPack: '**/*.sln'
+      versioningScheme: byBuildNumber
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop'
+...
