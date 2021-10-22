@@ -1,5 +1,4 @@
 using DevAndreaCarratta.HelloWorld;
-using System;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -7,8 +6,6 @@ namespace DevAndreaCarratta.Test.UnitTest
 {
     public class SayHelloWorldTest
     {
-
-
         [Fact]
         public async Task SayToAnonymousTest()
         {
