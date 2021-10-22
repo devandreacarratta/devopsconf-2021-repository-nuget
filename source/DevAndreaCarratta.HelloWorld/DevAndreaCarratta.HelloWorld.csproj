@@ -1,7 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+	<TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <Authors>devandreacarratta</Authors>
+    <Company>devandreacarratta</Company>
+    <Copyright>© devandreacarratta</Copyright>
+    <Description>Hello World!</Description>
+    <PackageProjectUrl>https://links.devandreacarratta.it/blog</PackageProjectUrl>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PackageTags>Hello World; netstandard2.1; netstandard</PackageTags>
+    <PackageIcon>hello-world-icon.jpg</PackageIcon>
+    <PackageIconUrl />
+    <PackageReleaseNotes>Do you need another Hello World?</PackageReleaseNotes>
   </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <EmbeddedResource Include="hello-world-icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </EmbeddedResource>
+  </ItemGroup>
 
 </Project>
