@@ -37,6 +37,8 @@ Contiente la pipeline in formato YAML di build della soluzione.
 
 # Link Utili
 
+- Nuget Profile: https://www.nuget.org/profiles/devandreacarratta
+- Nuget Hello World (della demo): https://www.nuget.org/packages/DevAndreaCarratta.HelloWorld/
 - GitHub: https://links.devandreacarratta.it/github
 - YouTube: https://links.devandreacarratta.it/youtube
 - Linkedin: https://www.linkedin.com/in/acarratta/
